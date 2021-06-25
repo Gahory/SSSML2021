@@ -5,62 +5,31 @@ description: "Safety and Security of Software Using Machine Learning in Cyber-ph
 
 <div class="zh post-container">
 
-    <!--copied from markdown -->
-    <blockquote><p>冰冻三尺 非一日之寒<br>
-    积土成山 非斯须之作</p></blockquote>
-
-    <p>Hey，我是<strong>柏荧(BY)</strong>，一只iOS程序猿，现在厦门工作。</p>
+    <p>A cyber-physical system (CPS) refers to the combination of computer-aided, software components with mechanical and electronic parts, which can be accessed via a data infrastructure, such as data centers where the Internet communicates. With the advancement of information technology in the big data and AI era, novel software in CPS emerges. While such software using machine learning helps develop novel applications in the CPS, it also brings challenges and safety and concerns, especially in software safety, reliability and security. There have already been reports on attacks using machine learning on such new software resulting in CPS crash, data leakage, and property loss. The problem will be even more severe if the software is deployed in a safety-critical system.</p>
 
     <p>工作、学习之余，我还是一个健身爱好者，同时也非常喜欢拳击。</p>
 
-    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/qiubaiying">👉GitHub·BY</a> 与 简书主页<a href="https://http://www.jianshu.com/u/e71990ada2fd">👉BY</a>。如果有什么问题，欢迎提出探讨~</p>
+    <p>To address this problem, there will be a workshop at ISSRE 2021. We welcome original work in methods and technologies that make novel theoretical or practical contributions to enhance the reliability, safety, and security of software using machine learning in CPS.</p>
 
-    <p></p>
+    <p>Topics of interest include development, analysis methods, technologies, and machine learning models to enhance the reliability, safety, and security of software in CPS, and are not limited to:</p>
     
-    <h5>Talks</h5>
-
-    <ul>
-        <li><a href="https://github.com">GitHub</a></li>
-        <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-        <li><a href="http://huangxuan.me/">Hux</a></li> 
-        <li><a href="https://analytics.google.com/analytics">Google Analytics</a></li>
-    </ul>
-</div>
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    <p>
+        <br/>1.	Reliability, Security, and Safety of Software in CPS
+        <br/>2.	Deep Learning for Program Synthesis
+        <br/>3.	Inroads in Testing Access Control Using Deep Learning
+        <br/>4.	Vulnerability Management
+        <br/>5.	Modern Software Quality Assurance
+        <br/>6.	Secure Development Life Cycle
+        <br/>7.	Security Architecture and Design
+        <br/>8.	Software Security Using Deep Learning
+        <br/>9.	Privacy-preserving Machine Learning and Data Analytics
+        <br/>10. Intrusion Detection Using Machine Learning
+        <br/>11. Testing, Verification, and Validation Using Deep Learning
+        <br/>12. Software Quality, Metrics and Measurements, Estimation and Prediction of Quality/Reliability
+        <br/>13. Dependability, Survivability, and Resilience Study
+        <br/>14. Supporting Tools and Automation in CPS
+        <br/>15. Empirical Study in CPS
+        <br/>16. Novel Interdisciplinary Research in CPS
     </p>
-</div>
-<hr>
-{% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+</div>
